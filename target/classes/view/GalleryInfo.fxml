@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" spacing="10"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.GalleryInfoController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <Label text="Business Information Management Panel" style="-fx-text-fill: #2c3e50;">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+
+    <TextArea fx:id="galleryInfoTextArea" editable="false"
+              VBox.vgrow="ALWAYS"
+              minHeight="500"
+              style="-fx-font-family: 'Segoe UI'; -fx-font-size: 15; -fx-text-fill: #333333; -fx-background-color: transparent; -fx-control-inner-background: #f9f9f9;" />
+
+</VBox>
