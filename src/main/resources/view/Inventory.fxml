@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InventoryController">
+    <children>
+        <VBox layoutX="20.0" layoutY="20.0" spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <Label text="Vehicle Stock" textFill="#2c3e50">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+
+                <TableView fx:id="tblVehicles" prefHeight="500.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="50.0" text="ID" />
+                        <TableColumn fx:id="colType" prefWidth="100.0" text="Vehicle Type"/>
+                        <TableColumn fx:id="colBrand" prefWidth="100.0" text="Brand" />
+                        <TableColumn fx:id="colModel" prefWidth="100.0" text="Model" />
+                        <TableColumn fx:id="colYear" prefWidth="70.0" text="Year" />
+                        <TableColumn fx:id="colKm" prefWidth="80.0" text="KM" />
+                        <TableColumn fx:id="colFuel" prefWidth="80.0" text="Fuel" />
+                        <TableColumn fx:id="colPrice" prefWidth="100.0" text="Price (TL)" />
+                        <TableColumn fx:id="colPlate" prefWidth="100.0" text="Plate" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+
+                <Label text="* If you want to add a new vehicle, click on the 'Add New Vehicle' button." textFill="#7f8c8d" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
